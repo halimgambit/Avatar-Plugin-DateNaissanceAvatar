@@ -13,7 +13,7 @@ function avatarNaissance (data, client) {
 		birthday = new Date(birthday)
 		return new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
 		}
-		Avatar.speak(`j'ai dabord vu le jour en octobre 2017 , j'ai etait développer par l'ingenieur et informaticien : stéphane bascherr , donc j'ai :" + ${age('1 OCtober 2017')} ans!`, data.client, () => {
+		Avatar.speak(`j'ai dabord vu le jour en octobre 2017 , j'ai etait développer par l'ingenieur et informaticien : stéphane bascherr , donc j'ai ${age('1 OCtober 2017')} ans!`, data.client, () => {
 		Avatar.Speech.end(data.client);
 		});
 }
